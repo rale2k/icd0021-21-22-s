@@ -1,0 +1,22 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model App.Domain.Stay
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>@App.Resources.WebApp.Views.Shared.CRUD.Delete</h1>
+
+<h3>@App.Resources.WebApp.Views.Shared.CRUD.AreYouSure</h3>
+<div>
+    <h4>Stay</h4>
+    <hr />
+
+    <partial name="_Details" model="Model"></partial>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="@App.Resources.WebApp.Views.Shared.CRUD.Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">@App.Resources.WebApp.Views.Shared.CRUD.BackToList</a>
+    </form>
+</div>

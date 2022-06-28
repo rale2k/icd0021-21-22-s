@@ -1,0 +1,62 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="CreatedAt" xml:space="preserve">
+        <value>Loomise Aeg</value>
+    </data>
+    <data name="CreatedBy" xml:space="preserve">
+        <value>Looja</value>
+    </data>
+    <data name="Description" xml:space="preserve">
+        <value>Kirjeldus</value>
+    </data>
+    <data name="End" xml:space="preserve">
+        <value>Lõppaeg</value>
+    </data>
+    <data name="FirstName" xml:space="preserve">
+        <value>Eesnimi</value>
+    </data>
+    <data name="LastName" xml:space="preserve">
+        <value>Perekonnanimi</value>
+    </data>
+    <data name="ModifiedAt" xml:space="preserve">
+        <value>Viimati Muudetud</value>
+    </data>
+    <data name="ModifiedBy" xml:space="preserve">
+        <value>Muutja</value>
+    </data>
+    <data name="Name" xml:space="preserve">
+        <value>Nimi</value>
+    </data>
+    <data name="PhoneNumber" xml:space="preserve">
+        <value>Telefoninumber</value>
+    </data>
+    <data name="Priority" xml:space="preserve">
+        <value>Prioriteetitase</value>
+    </data>
+    <data name="Start" xml:space="preserve">
+        <value>Algusaeg</value>
+    </data>
+    <data name="Status" xml:space="preserve">
+        <value>Staatus</value>
+    </data>
+    <data name="Type" xml:space="preserve">
+        <value>Tüüp</value>
+    </data>
+    <data name="Capacity" xml:space="preserve">
+        <value>Mahutavus</value>
+    </data>
+    <data name="ParentSection" xml:space="preserve">
+        <value>Ülemsektsioon</value>
+    </data>
+</root>

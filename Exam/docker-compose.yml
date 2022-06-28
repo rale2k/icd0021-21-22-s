@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  hotelmanagement-mariadb:
+    container_name: rental-mariadb
+    image: mariadb:latest
+    restart: unless-stopped
+    ports:
+      - 3306:3306
+    volumes:
+      - C:\Users\L2ppar\Documents\Docker\rental-mariadb:/var/lib/mysql
+    environment:
+      TZ: "Europe/Tallinn"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_USER: rental
+      MYSQL_PASSWORD: rental

@@ -1,0 +1,23 @@
+﻿@using Microsoft.Extensions.Options
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@inject IOptions<RequestLocalizationOptions> _localizationOptions
+@{
+    var cultureItems = _localizationOptions.Value.SupportedUICultures!
+        .Select(c => new {Value = c.Name, Text = c.NativeName}).ToList();
+}
+
+<div class="dropdown">
+    <a class="nav-link dropdown-toggle text-dark" href="javascript:{}" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        @App.Resources.WebApp.Views.Shared._Layout.Language
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        @foreach (var item in cultureItems)
+        {
+            <a class="dropdown-item @(Thread.CurrentThread.CurrentUICulture.Name == item.Value ? "active" : "")"
+               asp-area="" asp-controller="Home" asp-action="SetLanguage" asp-route-culture="@item.Value"
+               asp-route-returnUrl="@Context.Request.Path@Context.Request.QueryString">
+                @item.Text
+            </a>
+        }
+    </ul>
+</div>                        

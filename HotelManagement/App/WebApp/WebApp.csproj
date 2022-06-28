@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-44018DBE-B2BC-4DAC-BCF2-2AE015D31E7D</UserSecretsId>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="11.0.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.3" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Json.Microsoft" Version="6.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\App.BLL\App.BLL.csproj" />
+      <ProjectReference Include="..\App.DAL.DTO\App.DAL.DTO.csproj" />
+      <ProjectReference Include="..\App.DAL\App.DAL.csproj" />
+      <ProjectReference Include="..\App.Public.DTO\App.Public.DTO.csproj" />
+      <ProjectReference Include="..\App.Resources\App.Resources.csproj" />
+      <ProjectReference Include="..\..\Base\Base.Extensions\Base.Extensions.csproj" />
+      <ProjectReference Include="..\..\Base\Base.Webapp.Helpers\Base.Webapp.Helpers.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\ReservationAmenity\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\ReservationAmenity\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\ReservationAmenity\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\ReservationAmenity\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\ReservationAmenity\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\ReservationAmenity\_CreateEdit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\ReservationAmenity\_Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Room\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Room\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Room\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Room\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Room\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ticket\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomAmenity\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomAmenity\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomAmenity\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomAmenity\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomAmenity\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomAmenity\_CreateEdit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomAmenity\_Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomTypeAmenity\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomTypeAmenity\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomTypeAmenity\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomTypeAmenity\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomTypeAmenity\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomTypeAmenity\_CreateEdit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\RoomTypeAmenity\_Details.cshtml" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <InternalsVisibleTo Include="WebApp.Tests" />
+    </ItemGroup>
+
+</Project>
